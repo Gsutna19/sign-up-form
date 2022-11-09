@@ -10,7 +10,7 @@
 <body>
     <div class="left">
         <div id="title">
-            
+            <img src="images/odin-lined.png" alt="Outline of a rose">
             <h1>ODIN</h1>
         </div>
         <div id="artist">
@@ -20,7 +20,47 @@
 
     </div>
     <div class="right">
-        <p>Content</p>
+        <div class="top">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="mid">
+            <p>Let's do this!</p>
+            <form action="#" method="post" id="signup">
+                <div class="left forms">
+                    <div>
+                        <label for="fname">*First Name</label>
+                    </div>
+                    <input type="text" name="fname" id="fname" required>
+                    <div>
+                        <label for="userEmail">*Email</label>
+                    </div>
+                    <input type="email" name="userEmail" id="userEmail" required>
+                    <div>
+                        <label for="userPswrd">*Password</label>
+                    </div>
+                    <input type="password" name="userPswrd" id="userPswrd" required>
+                </div>
+                <div class="right forms">
+                    <div>
+                        <label for="lname">*Last Name</label>
+                    </div>
+                    <input type="text" name="lname" id="lname" required>
+                    <div>
+                        <label for="number">*Phone Number</label>
+                    </div>
+                    <input type="tel" name="number" id="number" placeholder="xxx-xxx-xxxx" pattern="/([0-9]{3})\-([0-9]{3})\-[0-9]{4}/g" required>
+                    <div>
+                        <label for="confirm">*Confirm Password</label>
+                    </div>
+                    <input type="password" name="confirm" id="confirm" required>
+                </div>
+            </form>
+        </div>
+        <div class="bottom">
+            <button type="submit" form="signup">Create Account</button>
+            <p>Already have an account? <a id="login" href="#">Log In</a></p>
+        </div>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
