@@ -39,7 +39,7 @@
                     <div>
                         <label for="userPswrd">*Password</label>
                     </div>
-                    <input type="password" name="userPswrd" id="userPswrd" required>
+                    <input type="password" name="userPswrd" id="userPswrd" minlength="8" required>
                 </div>
                 <div class="right forms">
                     <div>
@@ -49,11 +49,11 @@
                     <div>
                         <label for="number">*Phone Number</label>
                     </div>
-                    <input type="tel" name="number" id="number" placeholder="xxx-xxx-xxxx" pattern="/([0-9]{3})\-([0-9]{3})\-[0-9]{4}/g" required>
+                    <input type="tel" name="number" id="number" placeholder="xxxxxxxxxx" pattern="\d{10}" title="Phone number should be in format 'xxxxxxxxxx'." required>
                     <div>
                         <label for="confirm">*Confirm Password</label>
                     </div>
-                    <input type="password" name="confirm" id="confirm" required>
+                    <input type="password" name="confirm" id="confirm" minlength="8" required>
                 </div>
             </form>
         </div>
