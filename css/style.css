@@ -50,7 +50,7 @@ img {
     background-color: rgba(0, 0, 0, .50);
     align-content: center;
     justify-content: center;
-    margin-top: 0%;
+    margin-top: 68%;
 }
 
 #artist > p, p > a {
@@ -108,11 +108,16 @@ label {
     background-color: white;
 }
 
-input {
+input, .gray {
     height: 1.5rem;
     border: 2px solid lightgrey;
     border-radius: 4px;
 }
+
+/* input:invalid {
+    border: 2px solid rgb(189, 55, 55);
+    outline: none;
+} */
 
 input:focus {
     border: 2px solid lightskyblue;
@@ -120,16 +125,55 @@ input:focus {
     box-shadow: 0 1px 4px;
 }
 
-/* input:valid {
-    
-} */
-
-input:invalid {
-    border: 2px solid rgb(189, 55, 55);
-    outline: none;
+.green {
+    border: 2px solid rgb(54, 104, 54);
+    background-color: lightgreen;    
 }
 
+.red {
+    border: 2px solid rgb(189, 55, 55);
+    background-color: lightcoral;
+    outline: none;    
+}
 
+.errmsg, .tips {
+    font-size: .90rem;
+    margin: 0;
+}
+
+.errmsg {
+    visibility: hidden;
+    color: rgb(189, 55, 55);
+}
+
+.error {
+    visibility: visible;
+    /* display: block; */
+    font-weight: 800;
+}
+
+.tips {
+    color: rgb(156, 156, 156);
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: end;
+    margin-left: 8px;
+    padding-bottom: 2.5%;
+}
+
+.check {
+    color: rgb(112, 196, 112);
+    font-weight: 900;
+}
+/* input:valid {
+    border: 2px solid rgb(54, 104, 54);
+    background-color: lightgreen;
+} */
 
 /* BOTTOM */
 

@@ -17,7 +17,6 @@
             <p>Photo by <a href="https://unsplash.com/@angelekamp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Angèle Kamp</a> on <a href="https://unsplash.com/s/photos/flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </p>
         </div>
-
     </div>
     <div class="right">
         <div class="top">
@@ -40,6 +39,7 @@
                         <label for="userPswrd">*Password</label>
                     </div>
                     <input type="password" name="userPswrd" id="userPswrd" minlength="8" required>
+                    <p id="errorMsg" class="errmsg">*Passwords do not match!</p>
                 </div>
                 <div class="right forms">
                     <div>
@@ -49,11 +49,19 @@
                     <div>
                         <label for="number">*Phone Number</label>
                     </div>
-                    <input type="tel" name="number" id="number" placeholder="xxxxxxxxxx" pattern="\d{10}" title="Phone number should be in format 'xxxxxxxxxx'." required>
+                    <input type="tel" name="number" id="number" placeholder="xxx-xxx-xxxx" maxlength=12 title="Phone number should be in format 'xxxxxxxxxx'." required>
                     <div>
                         <label for="confirm">*Confirm Password</label>
                     </div>
                     <input type="password" name="confirm" id="confirm" minlength="8" required>
+                </div>
+                <div class="container">
+                    <p id="length" class="tips">At least 8 characters</p>
+                    <p id="caps" class="tips">At least 1 upper case letter</p>
+                    <p id="lower" class="tips">At least 1 lower case letter</p>
+                    <p id="nums" class="tips">At least 1 number</p>
+                    <p id="special" class="tips">At least 1 special char(*&$#@)</p>
+                    <p id="safe" class="tips">That's a strong Password!</p>
                 </div>
             </form>
         </div>
